@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>Fantasy Football Team Analysis</title>
+  <meta name="author" content="Urjeet Shrestha">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <script src="js/scripts.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reminders.html">Analysis <span class="sr-only">(current)</span> </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1>Please fill out the form below.</h1>
+  <div>You can get this data from ESPN.com. The league ID is on the link in the homepage of your fantasy team while SWID and espn_s2 are in the cookies.</div>
+     <div>You can access the cookies by Ctrl+Shift+I -> Application -> Cookies -> fantasy.espn.com </div>
+
+<form action = "/reminders.html" method = "POST">
+  <div class="form-group">
+    <label>League ID</label>
+    <input type="text" class="form-control" id="league_ID" name="league_ID" placeholder="Please input your League ID">
+  </div>
+  <div class="form-group">
+    <label>ESPN S2</label>
+    <input type="text" class="form-control" id="espn_s2" name="espn_s2" placeholder="Please input your ESPN S2 Key">
+  </div>
+  <div class="form-group">
+    <label>SWID</label>
+    <input type="text" class="form-control" id="swid" name="swid" placeholder="Please input your swid">
+  </div>
+  <div class="form-group">
+    <label>Team Name</label>
+    <input type="text" class="form-control" id="teamName" name="teamName" placeholder="Please input your team name">
+  </div>
+  <button type="submit" class="btn btn-primary">Get Advice!</button>
+</form>
+</body>
+</html>
